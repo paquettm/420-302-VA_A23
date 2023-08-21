@@ -1,0 +1,2 @@
+# 420-302-VA_A23
+Autumn 2023 420-302-VA IoT course
