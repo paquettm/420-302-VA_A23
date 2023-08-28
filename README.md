@@ -4,3 +4,5 @@ Autumn 2023 420-302-VA IoT course
 This repostory contains documentation shared for students of the Autumn 2023 420-302-VA course.
 
 See [Assignment 1: GitHub](IoT_GitHub_Assignment.md)
+
+See [SD CAre Preparation](SD_Card_Preparation.md)
