@@ -86,6 +86,8 @@ To modify the code using online-python.com, you can:
 - Save the file by clicking on the **Save File to Disk** icon that represents a disquette.
 - You can also modify an existing file by clicking on the **Open File from Disk** icon represented by an open folder, making the code changes, and then saving as above.
 
+**EDIT: For this assignment, to know the true potential of git and GitHub, modify the hello.py file that you have created in previous steps.**
+
 You have now modified the code using online-python.com. You can run it by clicking on **Run** and see the output in the console below.
 
 To commit the changes to Git, you must:
