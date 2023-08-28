@@ -5,4 +5,4 @@ This repostory contains documentation shared for students of the Autumn 2023 420
 
 See [Assignment 1: GitHub](IoT_GitHub_Assignment.md)
 
-See [SD CAre Preparation](SD_Card_Preparation.md)
+See [SD Card Preparation](SD_Card_Preparation.md)
