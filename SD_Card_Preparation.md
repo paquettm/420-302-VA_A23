@@ -69,3 +69,73 @@ One way to ensure that you have selected the correct drive is to open the select
 Click on **WRITE**.
 Heed the warnings.
 Proceed at your own risk.
+
+## Validating the Configuration
+
+Once your SD card has been written and verified by Raspberry Pi Imager, you may eject it from the PC and insert it into the unpowered Raspberry Pi device.
+
+### Network Connection
+
+Connect the Raspberry Pi device (RPi) to a compatible power supply and allow a few minutes for it to boot up.
+
+If the RPi and the wireless network have been configured correctly, then it should be possible to find the device on the local network, by adding `.local` to the end of the hostname.
+Frist try pnging the RPi, using its hostname, for example:
+
+```
+ping hostname.local
+```
+
+If the device is found, try connecting to it using `ssh` with your user name and hostname as follows:
+
+```
+ssh user@hostname.local
+```
+
+If the device is found, accept the key and enter the password.
+
+### Gadget Mode Connection
+
+If network connections fail or a local WiFi network is not available, you may fallback on gadget mode.
+
+Follow the set up procedure outlined at [https://github.com/paquettm/raspberry-pi-OS-setup/blob/main/gadget_mode/README.md](https://github.com/paquettm/raspberry-pi-OS-setup/blob/main/gadget_mode/README.md)
+
+To use gadget mode, you must connect the RPi to the computer as a device using a USB cable (data and power leads need to be functional) connected to the RPi power port.
+Allow a few minutes for it to boot up.
+
+If the connection via gadget mode is successful, then the above checks will provide positive results.
+
+### VNC Setup
+
+If the Network Connection or the Gadget Mode Connection with the RPi has been successful, and you have connected to it via SSH, then you have access to the RPi command prompt.
+
+To set up VNC, type
+
+```
+sudo raspi-config
+```
+
+Enter your user account password if required.
+
+Navigate to **Interface Options** and then **VNC** and select **Yes**.
+
+Exit the raspi-config program.
+
+In the unlikely case you must reboot, type 
+```
+sudo reboot
+```
+
+### VNC Connection
+
+To complete a VNC connection, you need to have a VNC client installed on your computer or a portable VNC client application.
+You may download a portable VNC client from [https://www.realvnc.com/en/connect/download/viewer/](https://www.realvnc.com/en/connect/download/viewer/).
+
+With the RPi connected as previously functional, connect your VNC client to `hostname.local`, accept any fingerprint or key and then enter your account information.
+
+You should now have access to the graphical desktop.
+
+## Explore
+
+Get a feel for the environment and try to understand why your RPi is not connected onto the wireless network.
+Try using raspi-config to connect your RPi to the wireless network.
+
