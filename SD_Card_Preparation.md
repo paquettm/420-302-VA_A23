@@ -81,7 +81,7 @@ Connect the Raspberry Pi device (RPi) to a compatible power supply and allow a f
 
 If the RPi and the wireless network have been configured correctly, then it should be possible to find the device on the local network, by adding `.local` to the end of the hostname.
 
-**Note: If the procedure has been followed and the hostname.local address does not find as indicated below, the router multicast option may be disabled and it may be possible to correct this situation by turning on this type of feature.**
+**Note: If the procedure has been followed and the hostname.local address does not find as indicated below, the router multicast DNS (mDNS) option (sometimes grouped under some other "multicast" title) may be disabled and it may be possible to correct this situation by turning on this type of feature.**
 
 Frist try pnging the RPi, using its hostname, for example:
 
