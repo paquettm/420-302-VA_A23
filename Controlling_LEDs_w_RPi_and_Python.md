@@ -27,13 +27,13 @@ Ensure that the LEDs are connected in the correct order as per the BCM (logical)
 a. Open the terminal on your Raspberry Pi.
 b. Create a new Python file for your program. You can use the `nano` text editor or any other text editor of your choice:
 
-```
+```bash
 nano binary_seconds_display.py
 ```
 
 c. Copy and paste the following Python code into the `binary_seconds_display.py` file:
 
-```
+```python
 import RPi.GPIO as GPIO # General Purpose Input/Output library
 import time
 
@@ -71,7 +71,7 @@ Save the file and exit the text editor.
 **3. Running the Program:**
 a. In the terminal, run the Python program you just created:
 
-```
+```bash
 python binary_seconds_display.py
 ```
 
