@@ -48,20 +48,22 @@ for pin in led_pins:
     GPIO.setup(pin, GPIO.OUT)
 
 try:
-    while True: #forever
+    while True: # forever until CTRL-C
+        # get the current time and seconds
         current_time = time.localtime()
         seconds = current_time.tm_sec
 
         # convert seconds to binary string
         binary_seconds = format(seconds, '06b')
 
-
+        # display each binary digit by turning LEDs on or off
         for i in range(6):
             GPIO.output(led_pins[i], int(binary_seconds[i]))
 
+        # wait one second before resuming the program
         time.sleep(1)
 
-finally: #when an error occurs, don't leave the try block without doing this
+finally: # when an error occurs, don't leave the try block without doing this
     # Clean up GPIO on program exit
     GPIO.cleanup()
 ```
@@ -78,6 +80,6 @@ python binary_seconds_display.py
 Your LEDs should now start displaying a binary count of seconds from 0 to 59. Each LED represents a binary digit, and they will change to display the current seconds.
 
 **4. Lab Questions:**
-- Observe the behavior of the LEDs. What do you notice as the seconds change from 0 to 59?
+- Observe the behavior of the LEDs. What do you notice as the seconds change from 0 to 59? And 59 to 0?
 - How does the `format(seconds, '06b')` function work in formatting the binary representation?
 - What would you need to modify in the code if you wanted to use different GPIO pins for the LEDs?
