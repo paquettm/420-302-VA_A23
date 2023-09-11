@@ -150,6 +150,7 @@ With `paho-mqtt` successfully installed, the library is now available for all fu
 Ensure you document your observations and any issues encountered during this laboratory exercise in your report.
 
 **Challenge**
+
 In our [previous lab](Controlling_LEDs_w_RPi_and_Python.md), we lit up led lights to accommodate a countup to 59.
 
 1- Modify the publisher program to send random numbers from 0 to 63.
