@@ -48,6 +48,10 @@ In summary, MQTT is a messaging protocol designed for efficient and reliable com
 
 **Procedure:**
 
+Start by starting up your RPi and taking the steps necessary to connect to it via SSH.
+Later, we will need to have 2 SSH connections open to our RPi.
+For the time being, one connection will suffice.
+
 **Step 1: Update and Upgrade**
 1.1. Open a terminal on your Raspberry Pi.
 
@@ -80,21 +84,20 @@ sudo systemctl status mosquitto
 ```
 
 **Step 4: Testing Mosquitto**
-4.1. Open two terminal windows or SSH sessions, one for subscribing and one for publishing MQTT messages.
-
-**Publishing Test:**
-4.2. In one terminal, use the `mosquitto_pub` command to publish a test message to a topic. Replace `test/topic` with your chosen topic and `"Hello, MQTT!"` with your message:
-```bash
-mosquitto_pub -t "test/topic" -m "Hello, MQTT!"
-```
+4.1. Open a second terminal window and SSH session.
+One will be for subscribing and one for publishing MQTT messages.
 
 **Subscribing Test:**
-4.3. In the other terminal, subscribe to the same topic using the `mosquitto_sub` command:
+4.2. In the first terminal, subscribe to the same topic using the `mosquitto_sub` command:
 ```bash
 mosquitto_sub -t "test/topic"
 ```
 
-4.4. Observe the message received in the subscribing terminal.
+**Publishing Test:**
+4.3. In the second terminal, use the `mosquitto_pub` command to publish a test message to a topic. Replace `test/topic` with your chosen topic and `"Hello, MQTT!"` with your message:
+```bash
+mosquitto_pub -t "test/topic" -m "Hello, MQTT!"
+```
 
 5. Further experimentation
 
@@ -127,6 +130,7 @@ Ensure you have the necessary permissions and access to the remote MQTT broker, 
 
 Remember to replace `<broker_host>`, `<broker_port>`, `<topic>`, and `<message>` with the specific values for the MQTT broker you intend to use.
 
+Try subscribing to the MQTT broker from a colleague's RPi, subscribing to a topic and have them publish to this topic.
 
 **Review Questions:**
 1. What is the primary purpose of the MQTT protocol in IoT applications?
