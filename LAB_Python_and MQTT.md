@@ -66,10 +66,27 @@ This laboratory session builds upon the previous session, where you installed an
    
 **OOPS!**
 
-That shouldn't have worked if you've never worked with the `paho-mqtt` library.
+If you've never worked with the `paho-mqtt` library, the program certainly failed to start and you saw errors at the command prompt.
+When attempting to run your Python program, you might encounter the following error:
+
+```
+Traceback (most recent call last):
+  File "/home/youraccountname/mqtt_subscriber.py", line 1, in <module>
+    import paho.mqtt.client as mqtt
+ModuleNotFoundError: No module named 'paho'
+```
+
+**Error Explanation:**
+
+This error message indicates a `ModuleNotFoundError`. Specifically, Python is unable to locate the `paho` module. The `paho` module is essential for MQTT communication in your program, and this error occurs when the module is not installed or not accessible within your Python environment. To resolve this issue, you should ensure that the `paho-mqtt` library is correctly installed in your Python environment as instructed earlier in the lab.
+
+**Libraries**
+
 Libraries contain pre-written code with functions designed to perform specific tasks in a programming language.
 The Python community has developed numerous libraries to extend Python's capabilities for various applications.
 To utilize these libraries, they must be installed as part of the configuration process for the Python runtime environment.
+
+**Solution**
 
 In our laboratory session, we will install the `paho-mqtt` library.
 This library is essential for our tasks, enabling us to work with the MQTT protocol in Python.
