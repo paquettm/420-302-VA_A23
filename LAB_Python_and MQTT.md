@@ -148,3 +148,12 @@ With `paho-mqtt` successfully installed, the library is now available for all fu
 6. How could these MQTT communication techniques be applied in real-world IoT projects?
 
 Ensure you document your observations and any issues encountered during this laboratory exercise in your report.
+
+**Challenge**
+In our [previous lab](Controlling_LEDs_w_RPi_and_Python.md), we lit up led lights to accommodate a countup to 59.
+
+1- Modify the publisher program to send random numbers from 0 to 63.
+
+2- Modify the subscriber program to output the random number to the led lights as in the previous lab.
+
+Hint: you may have to convert datatypes with the int() function to get this program working.
