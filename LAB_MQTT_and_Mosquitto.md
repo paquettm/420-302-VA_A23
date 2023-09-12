@@ -4,7 +4,7 @@
 ## Objective:
 The objective of this laboratory session is to install and test the Mosquitto MQTT broker on a Raspberry Pi 4 running the latest Raspberry Pi OS. MQTT is a crucial protocol used in various Internet of Things (IoT) applications for efficient communication between devices.
 
-##An overview of MQTT and Mosquitto
+## An overview of MQTT and Mosquitto
 
 **MQTT (Message Queuing Telemetry Transport):**
 MQTT is a lightweight, publish-subscribe messaging protocol designed for efficient communication in constrained or unreliable networks, making it well-suited for Internet of Things (IoT) applications. It was developed by IBM in the late 1990s but has gained widespread adoption due to its simplicity and efficiency.
@@ -83,6 +83,26 @@ sudo systemctl start mosquitto
 sudo systemctl status mosquitto
 ```
 
+This should produce an output similar to:-
+
+```
+● mosquitto.service - Mosquitto MQTT Broker
+     Loaded: loaded (/lib/systemd/system/mosquitto.service; enabled; vendor pr>
+     Active: active (running) since Sat 2023-02-11 13:57:48 EST; 56s ago
+       Docs: man:mosquitto.conf(5)
+             man:mosquitto(8)
+   Main PID: 3173 (mosquitto)
+      Tasks: 1 (limit: 779)
+        CPU: 140ms
+     CGroup: /system.slice/mosquitto.service
+             └─3173 /usr/sbin/mosquitto -c /etc/mosquitto/mosquitto.conf
+
+Feb 11 13:57:48 raspberrypi systemd[1]: Starting Mosquitto MQTT Broker...
+Feb 11 13:57:48 raspberrypi systemd[1]: Started Mosquitto MQTT Broker.
+```
+
+To exit this view, type the characters `:q`.
+
 **Step 4: Testing Mosquitto**
 4.1. Open a second terminal window and SSH session.
 One will be for subscribing and one for publishing MQTT messages.
@@ -126,7 +146,27 @@ mosquitto_pub -h <broker_host> -p <broker_port> -t <topic> -m <message>
 - `<topic>`: Set the topic to which you want to publish a message on the remote broker.
 - `<message>`: The message you want to publish.
 
-Ensure you have the necessary permissions and access to the remote MQTT broker, and ensure that the broker's security settings (if any) are configured to allow your connections.
+**Serving Remote Requests**
+We must ensure that your device has the necessary permissions and access to the remote MQTT broker, and ensure that the broker's settings are configured to allow your connections.
+
+To configure Mosquitto to serve remote hosts:
+
+```
+sudo nano /etc/mosquitto/conf.d/mosquitto.conf
+
+```
+add the following lines
+```
+allow_anonymous true
+listener 1883 0.0.0.0
+
+```
+To save and exit, press `CTRL-o`, `ENTER`, and `CTRL-x`.
+
+type the following to load the new settings
+```
+sudo systemctl restart mosquitto
+```
 
 Remember to replace `<broker_host>`, `<broker_port>`, `<topic>`, and `<message>` with the specific values for the MQTT broker you intend to use.
 
