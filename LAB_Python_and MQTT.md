@@ -1,4 +1,6 @@
-**Laboratory: MQTT Communication with Python on Raspberry Pi**
+## Laboratory: MQTT Communication with Python on Raspberry Pi
+
+**Note: You previously installed Mosquitto as a MQTT message broker. The procedure was updated to show you how to configur Mosquitto to allow remote connections. Go back to [the procedure](LAB_MQTT_and_Mosquitto.md) to make sure that you do allow rmote connections.**
 
 **Objective:**
 This laboratory session builds upon the previous session, where you installed and tested Mosquitto on a Raspberry Pi. In this session, you will create Python programs to subscribe to and publish messages to the MQTT broker running on the Raspberry Pi. Additionally, you will connect to the Raspberry Pi via SSH from your Windows or macOS command line.
