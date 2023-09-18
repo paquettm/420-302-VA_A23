@@ -160,3 +160,9 @@ In our [previous lab](Controlling_LEDs_w_RPi_and_Python.md), we lit up led light
 2- Modify the subscriber program to output the random number to the led lights as in the previous lab.
 
 Hint: you may have to convert datatypes with the int() function to get this program working.
+
+**Challenge 2**
+
+Get the above subscriber program to function without the publisher program.
+Instead, replace this publisher by manual publish commands at the command prompt.
+Explain how the process works, step by step, from the message publish all the way to the LEDs lighting up.
