@@ -165,4 +165,6 @@ Hint: you may have to convert datatypes with the int() function to get this prog
 
 Get the above subscriber program to function without the publisher program.
 Instead, replace this publisher by manual publish commands at the command prompt.
+Now use a portable MQTT client on a workstation to connect to the RPi MQTT server and publish messages.
+For example, use [MQTT Explorer](https://mqtt-explorer.com/).
 Explain how the process works, step by step, from the message publish all the way to the LEDs lighting up.
