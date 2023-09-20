@@ -138,6 +138,10 @@ With the RPi connected as previously functional, connect your VNC client to `hos
 
 You should now have access to the graphical desktop.
 
+Note: This graphical connection is very nice to hav but by no means necessary to perform operations on the Raspberry Pi.
+In most cases, when coding or running Python, configuring Linux/Raspberry Pi OS, etc. you will be working from the command prompt, a.k.a. the terminal.
+For this reason, the real requirement for accessing your Raspberry Pi is the ability to SSH into your account.
+
 ## Explore
 
 Get a feel for the environment and try to understand why your RPi is not connected onto the wireless network.
