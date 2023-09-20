@@ -1,4 +1,4 @@
-# Lab: Communicating with I2C Devices on Raspberry Pi in Python
+# Lab: Communicating with I2C Devices on Raspberry Pi in Object-Oriented Python
 
 ## Objective:
 In this lab, you will learn how to enable the I2C interface on your Raspberry Pi, connect an I2C temperature sensor, and write a Python program to communicate with the sensor and read temperature data.
