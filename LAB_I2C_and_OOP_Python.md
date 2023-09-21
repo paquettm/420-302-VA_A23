@@ -141,31 +141,6 @@ Attributes:
 - i2c_bus and i2c_address are attributes storing I2C configuration.
 - in the class definition, they are preceded by the keyword `self` to make it clear that they are object attributes and not global variables.
 
-Step 5: Run the Python Program
-5.1. Run the Python script to read temperature data from the I2C sensor:
-
-bash
-Copy code
-python3 temperature_sensor.py
-The script will continuously display temperature readings in degrees Celsius.
-
-Step 6: Observations
-6.1. Observe the temperature readings displayed in the terminal. The program should read and display the temperature from your I2C temperature sensor.
-
-6.2. Experiment with different conditions to see how the temperature readings change.
-
-Conclusion:
-In this lab, you learned how to enable the I2C interface on your Raspberry Pi, test the I2C connection, connect an I2C temperature sensor, and use Python to communicate with the sensor and read temperature data. You also gained insights into object-oriented programming principles by exploring the provided Python code. This skill is essential for working with various I2C-based sensors and devices in your Raspberry Pi projects.
-
-
-
-
-
-
-
-
-
-
 
 ### Step 5: Run the Python Program
 
@@ -185,3 +160,6 @@ In this lab, you learned how to enable the I2C interface on your Raspberry Pi, t
 
 ### Conclusion:
 In this lab, you learned how to enable the I2C interface on your Raspberry Pi, connect an I2C temperature sensor, and use Python to communicate with the sensor and read temperature data. This skill is essential for working with various I2C-based sensors and devices in your Raspberry Pi projects.
+
+Moreover, you were able to observe code structured usng the Object-Oriented Programming approach.
+This programming paradigm nables programmers to organize code in a way that is scalable and maintainable.
