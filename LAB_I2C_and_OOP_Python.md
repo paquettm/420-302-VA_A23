@@ -162,4 +162,4 @@ Attributes:
 In this lab, you learned how to enable the I2C interface on your Raspberry Pi, connect an I2C temperature sensor, and use Python to communicate with the sensor and read temperature data. This skill is essential for working with various I2C-based sensors and devices in your Raspberry Pi projects.
 
 Moreover, you were able to observe code structured usng the Object-Oriented Programming approach.
-This programming paradigm nables programmers to organize code in a way that is scalable and maintainable.
+This programming paradigm enables programmers to organize code in a way that is scalable and maintainable.
