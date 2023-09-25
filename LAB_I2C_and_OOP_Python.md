@@ -163,3 +163,14 @@ In this lab, you learned how to enable the I2C interface on your Raspberry Pi, c
 
 Moreover, you were able to observe code structured usng the Object-Oriented Programming approach.
 This programming paradigm enables programmers to organize code in a way that is scalable and maintainable.
+
+### Challenge
+
+With what you have learned so far, combine code from the current lab with code from previous labs to build 2 Python programs:
+
+1. A Python program that reads the temperature from the i2c bus and publishes it to MQTT topic "room/temperature".
+2. A Python program that subscribes to the "room/temperature" topic and outputs the data to the console, non-stop.
+
+### Challenge 2
+
+Using 2 objects, get readings from 2 sensors on the i2c bus and proceed as above, on topics "room1/temperature" and "room2/temperature".
