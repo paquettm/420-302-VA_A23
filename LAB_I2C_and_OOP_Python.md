@@ -27,8 +27,8 @@ In this lab, you will learn how to enable the I2C interface on your Raspberry Pi
 ### Step 2: Connect the I2C Device
 
 2.1. **Physical Connections**:
-   - Connect the SDA (Serial Data) pin of the I2C sensor to GPIO pin 3 (physical pin 5) on your Raspberry Pi.
-   - Connect the SCL (Serial Clock) pin of the I2C sensor to GPIO pin 5 (physical pin 3) on your Raspberry Pi.
+   - Connect the SDA (Serial Data) pin of the I2C sensor to GPIO pin 2 (physical pin 3) on your Raspberry Pi.
+   - Connect the SCL (Serial Clock) pin of the I2C sensor to GPIO pin 3 (physical pin 5) on your Raspberry Pi.
    - Ensure that your Raspberry Pi and I2C sensor share a common ground connection.
 
 2.2 **Test I2C Connection**
