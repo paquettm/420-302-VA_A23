@@ -142,7 +142,7 @@ void connect() {
 6. **Upload the Code:**
    - Select your ESP32 board from the "Tools" > "Board" menu. (You probably have an `ESP32 Dev Module`)
    - Select the correct COM port under the "Tools" > "Port" menu. (The correct port probably contains "USB" in its designation if you are connected over USB)
-   - Click the "Upload" button (right arrow ![Upload](Upload.png "Upload")) to upload the code to the ESP32.
+   - Click the "Upload" button (right arrow ![Upload](Upload.png "Upload")) to upload the code to the ESP32. Note that the checkmark icon to its left is the "Compile" button which compiles but does not send the program to the device.
 
 7. **Monitor Serial Output:**
    - Open the Serial Monitor in the Arduino IDE (Tools > Serial Monitor).
