@@ -233,13 +233,17 @@ In MQTT-based applications, having unique names for devices is essential for rel
 1. **Assemble the Circuit:**
    - Place the ESP32 development board on a breadboard.
    - Connect one leg of the photocell to one terminal of the 10k-ohm resistor.
-   - Connect the other leg of the photocell to the ESP32's analog pin (e.g., A0).
+   - Connect the other leg of the photocell to the ESP32's VCC pin (e.g., A0).
    - Connect the other terminal of the resistor to the ESP32's ground (GND) pin.
-   - Connect a jumper wire from the junction of the photocell and resistor to the ESP32's 3.3V pin.
+   - Connect a jumper wire from the junction of the photocell and resistor a usable ESP32 analog input pin, e.g., GPIO34 as used in the code below.
 
    Your circuit should resemble a voltage divider, with the photocell and resistor connected in series between 3.3V and GND, and the junction connected to the ESP32's analog pin.
 
-2. **Calibration (Optional):**
+   Note: Consult the pinout for your board to know the exact pinout. GPIO pin numbers (logical) are used in the code, not physical (sequential from 1 to ...) pin numbers.
+   
+   Note: ESP32 ADC2 pins cannot be used when Wi-Fi is used. So, if you’re using Wi-Fi and you’re having trouble getting the value from an ADC2 GPIO, you may consider using an ADC1 GPIO instead, that should solve your problem.
+
+3. **Calibration (Optional):**
    - For accurate light measurements, calibrate the sensor in a known lighting condition (e.g., full daylight and complete darkness).
    - Use a multimeter to measure the resistance of the photocell in both conditions and note the values.
    - Use these values to map the photocell resistance to a lighting level in your Arduino code (explained in the code section).
@@ -253,7 +257,7 @@ In MQTT-based applications, having unique names for devices is essential for rel
    - Add the following code snippet to measure the lighting level using the photocell:
 
 ```cpp
-int lightPin = A0; // Analog pin connected to the photocell
+int lightPin = 34; // Analog pin connected to the photocell
 int lightValue = 0; // Variable to store the light level
 
 void setup() {
