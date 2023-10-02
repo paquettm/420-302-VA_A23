@@ -18,7 +18,7 @@ To install ESP32 dependencies on the Arduino IDE, follow these steps:
       ```
       https://dl.espressif.com/dl/package_esp32_index.json
       ```
-      If there is already other text there, you may separate different URLs with a comma, `http://example.com/resouces.json, http://newexample.com/other_resource.json`
+      If there is already other text there, you may separate different URLs with a comma, e.g., `http://example.com/resouces.json, http://newexample.com/other_resource.json`
 
    d. Click "OK" to save the preferences.
 
