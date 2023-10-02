@@ -241,7 +241,7 @@ In MQTT-based applications, having unique names for devices is essential for rel
 
    Notes:
 
-   - Consult the pinout for your board to know the exact pinout. GPIO pin numbers (logical) are used in the code, not physical (sequential from 1 to ...) pin numbers.
+   - Consult the pinout for your board to know the exact pinout. GPIO pin numbers (logical) are used in the code, not physical (sequential from 1 to ...) pin numbers. E.g., [for ESP-WROOM-32](https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/).
    - ESP32 ADC2 pins cannot be used when Wi-Fi is used. So, if you’re using Wi-Fi and you’re having trouble getting the value from an ADC2 GPIO, you may consider using an ADC1 GPIO instead, that should solve your problem.
    - The resistor value must be sufficient to limit current.
    - In the absence of a photoresistor and resistor, simulate with a potentiometer.
