@@ -140,7 +140,7 @@ void connect() {
    - The `name` variable combines a client name prefix with the ESP32's MAC address to create a unique client identifier.
 
 6. **Upload the Code:**
-   - Select your ESP32 board from the "Tools" > "Board" menu.
+   - Select your ESP32 board from the "Tools" > "Board" menu. (You probably have an `ESP32 Dev Module`)
    - Select the correct COM port under the "Tools" > "Port" menu.
    - Click the "Upload" button (right arrow) to upload the code to the ESP32.
 
