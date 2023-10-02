@@ -239,9 +239,12 @@ In MQTT-based applications, having unique names for devices is essential for rel
 
    Your circuit should resemble a voltage divider, with the photocell and resistor connected in series between 3.3V and GND, and the junction connected to the ESP32's analog pin.
 
-   Note: Consult the pinout for your board to know the exact pinout. GPIO pin numbers (logical) are used in the code, not physical (sequential from 1 to ...) pin numbers.
-   
-   Note: ESP32 ADC2 pins cannot be used when Wi-Fi is used. So, if you’re using Wi-Fi and you’re having trouble getting the value from an ADC2 GPIO, you may consider using an ADC1 GPIO instead, that should solve your problem.
+   Notes:
+
+   - Consult the pinout for your board to know the exact pinout. GPIO pin numbers (logical) are used in the code, not physical (sequential from 1 to ...) pin numbers.
+   - ESP32 ADC2 pins cannot be used when Wi-Fi is used. So, if you’re using Wi-Fi and you’re having trouble getting the value from an ADC2 GPIO, you may consider using an ADC1 GPIO instead, that should solve your problem.
+   - The resistor value must be sufficient to limit current.
+   - In the absence of a photoresistor and resistor, simulate with a potentiometer.
 
 3. **Calibration (Optional):**
    - For accurate light measurements, calibrate the sensor in a known lighting condition (e.g., full daylight and complete darkness).
