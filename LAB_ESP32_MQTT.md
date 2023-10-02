@@ -35,19 +35,20 @@
    - Launch the Arduino IDE on your computer.
 
 4. **Load the Code:**
-   - Copy and paste the following code into the Arduino IDE:
+   - Write the following code into the Arduino IDE:
 
 ```cpp
-#include <WiFi.h>
-#include <PubSubClient.h>
-#include <Arduino.h>
+//libraries to integrate functionality
+#include <WiFi.h> //wifi connection
+#include <PubSubClient.h> //MQTT messaging
+#include <Arduino.h> //Input and output
 
-// Replace with your Wi-Fi credentials
-const char* ssid = "iot_wireless";  // The name of the WiFi network
-const char* password = "Unsecure!"; // The WiFi network passkey
+// Wi-Fi credentials: replace with those of your network
+const char* ssid = "ssid";  // The name of the WiFi network
+const char* password = "passkey"; // The WiFi network passkey
 
-// MQTT broker details
-const char* mqtt_server = "paquette-pi4.local"; // The MQTT broker's hostname or IP address
+// MQTT broker details: replace with your own
+const char* mqtt_server = "devicename.local"; // The MQTT broker's hostname or IP address
 const int mqtt_port = 1883;  // MQTT broker port (1883 is default)
 const char* mqtt_topic = "house/greeting";  // MQTT topic to publish messages
 // MQTT client name prefix (will add MAC address)
@@ -133,9 +134,9 @@ void connect() {
 5. **Code Explanation and Comments:**
 
    - The code begins by including necessary libraries for Wi-Fi, MQTT, and Arduino functionality.
-   - Replace the `ssid` and `password` variables with the credentials of your Wi-Fi network.
-   - Replace the `mqtt_server` variable with the hostname or IP address of your MQTT broker.
-   - Modify the `mqtt_topic` variable to specify the MQTT topic you want to use.
+   - Replace the `ssid` and `passkey` strings with the credentials of your Wi-Fi network.
+   - Replace the `mqtt_server` variable contents with the hostname or IP address of your MQTT broker.
+   - Modify the `mqtt_topic` variable content to specify the MQTT topic you want to use.
    - The `name` variable combines a client name prefix with the ESP32's MAC address to create a unique client identifier.
 
 6. **Upload the Code:**
