@@ -311,3 +311,35 @@ void loop() {
     - Disconnect the ESP32 and circuit components.
 
 **Note:** In this part, we've added code to measure lighting using the photocell and transmit the data over MQTT. Calibration is optional but can improve accuracy in measuring lighting conditions. Depending on the specific photocell and resistor used, calibration values may vary, so students should adjust the code accordingly.
+
+## Troubleshooting
+
+### PubSubClient library
+
+If you're having trouble finding the `PubSubClient.h` library in the Arduino IDE on your Raspberry Pi, you might need to manually install it. Here's how you can do that:
+
+1. **Open Arduino IDE**: Launch the Arduino IDE on your Raspberry Pi.
+
+2. **Go to Library Manager**: Click on "Sketch" in the top menu, then select "Include Library" and click on "Manage Libraries."
+
+3. **Search for PubSubClient**: In the Library Manager, you can search for the `PubSubClient` library in the search bar.
+
+4. **Install PubSubClient**: Once you find the `PubSubClient` library in the list, click on the "Install" button next to it. This will download and install the library on your Raspberry Pi.
+
+5. **Check Installation**: After installation is complete, you should see a green checkmark next to the `PubSubClient` library in the Library Manager.
+
+6. **Verify the Library**: To make sure the library is available for your sketches, you can create a new Arduino sketch and check if you can include the `PubSubClient.h` library without any errors. You can do this by adding the following line at the beginning of your sketch:
+
+   ```cpp
+   #include <PubSubClient.h>
+   ```
+
+If you still face issues, make sure your Arduino IDE is up to date and your Raspberry Pi is connected to the internet. Occasionally, network issues can prevent the IDE from downloading and installing libraries. You can also try restarting the Arduino IDE after installing the library.
+
+Additionally, if you have installed the Arduino IDE through Snap or another package manager, there might be some permission issues. In that case, you can try running the Arduino IDE with elevated privileges using `sudo`, but be cautious when using `sudo` with GUI applications to avoid any unintended consequences.
+
+```bash
+sudo arduino
+```
+
+Remember that using `sudo` can have security implications, so use it only if you can't resolve the issue through other means.
