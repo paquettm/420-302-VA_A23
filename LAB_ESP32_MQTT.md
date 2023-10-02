@@ -141,8 +141,8 @@ void connect() {
 
 6. **Upload the Code:**
    - Select your ESP32 board from the "Tools" > "Board" menu. (You probably have an `ESP32 Dev Module`)
-   - Select the correct COM port under the "Tools" > "Port" menu.
-   - Click the "Upload" button (right arrow) to upload the code to the ESP32.
+   - Select the correct COM port under the "Tools" > "Port" menu. (The correct port probably contains "USB" in its designation if you are connected over USB)
+   - Click the "Upload" button (right arrow ![Upload](Upload.png "Upload")) to upload the code to the ESP32.
 
 7. **Monitor Serial Output:**
    - Open the Serial Monitor in the Arduino IDE (Tools > Serial Monitor).
@@ -159,6 +159,7 @@ void connect() {
 9. **Debugging:**
    - If you encounter any issues, carefully review the code for errors and check your Wi-Fi and MQTT broker settings.
    - Verify that your ESP32 is connected to Wi-Fi and can reach the MQTT broker.
+   - If you are having compilation errors, see the troubleshooting section lower in this document.
 
 **Conclusion:**
 
@@ -343,3 +344,7 @@ sudo arduino
 ```
 
 Remember that using `sudo` can have security implications, so use it only if you can't resolve the issue through other means.
+
+## Not compiling at all
+
+Try restarting the Arduino IDE as it will clear some memory states and compilation files.
