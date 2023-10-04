@@ -76,12 +76,10 @@ Use `inline code` within your text.
 
 Create code blocks by indenting with four spaces or using triple backticks (```):
 ```
-
-``` 
+\``` 
 def greet(name):
     print(f"Hello, {name}!")
-``` 
-
+\``` 
 ```
 
 ## Horizontal Rule
