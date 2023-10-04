@@ -51,11 +51,13 @@ Note: to write the README.md document properly, refer to this [Markdown Cheatshe
 
 ## Grading Criteria
 
-This activity is ungraded. However its quality can be measured using the following criteria:
+This activity is ungraded. However the best way for you to prepare for the upcoming midterm is to understand why and how to execute each part and the whole of this activity.
+
+Its quality can be measured using the following criteria:
 
 - Successful setup of the Raspberry Pi and Mosquitto broker including connectivity from an external device.
 - Proper programming and functionality of the ESP32 for publishing light intensity readings. This can be validated using `mosquitto_sub -t room/lighting` at the Raspberry Pi command prompt.
 - Correct implementation of the Python program on the Raspberry Pi. This can be validated by the system reacting as expected given MQTT communication is properly implemented.
-- Quality and completeness of your documentation and report.
+- Quality and completeness of your documentation and report, including depth of reflection.
 
 **Have fun!**
