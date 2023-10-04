@@ -47,6 +47,8 @@ Not that you must also set up a photoresistor/resistor voltage splitter circuit 
        - Reflect on the practical applications of your IoT system.
        - Reflect on the potential consequences of a malicious agent sending false MQTT room lighting readings within our system.
 
+Note: to write the README.md document properly, refer to this [Markdown Cheatsheet](Markdown_Cheatsheet.md) which explaind basic items that you can include in your text to get a nice report.
+
 ## Grading Criteria
 
 This activity is ungraded. However its quality can be measured using the following criteria:
