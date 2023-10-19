@@ -1,6 +1,6 @@
 # Project Statement: Learning Integration Assessment - Raspberry Pi and Arduino-based IoT System**
 
-## Project Overview:**
+## Project Overview
 In this term project, students will work in teams of two to design, configure, and program a Raspberry Pi Single Board Computer (SBC) integrated with Arduino-based devices. The objective is to create an IoT system capable of monitoring and controlling a physical process with at least one analog measurement, which will be proposed by the students and approved by the teacher. The project will utilize an ESP32 microcontroller configured as a distributed IoT system. The system will feature a supervisory web interface served from the Raspberry Pi (SBC) device.
 
 ## Project Tasks
@@ -42,3 +42,30 @@ To ensure the success of this project, it is essential that students adhere to t
 - **Documentation:** The project must be thoroughly documented on GitHub, with equal contributions from all team members, providing transparency and accountability. Make sure that you are using your GitHub account to add your contribution as the history of your project will be inspected. Think of your GitHub repository as a portfolio item that can help you toward getting that great career opportunity.
 
 This project offers an exciting opportunity for students to gain hands-on experience in configuring and programming IoT systems while emphasizing collaboration, documentation, and reflection. It is a challenging and rewarding endeavor that prepares students for real-world applications of IoT technology.
+
+
+## Project Schedule and Deliverables
+
+*Note: The final exam is on Friday, December 8, 2023. Classes are held on Mondays and Thursdays.*
+
+**Week 1: October 19 - October 26, 2023**
+- *Thursday, October 19:* Project Kickoff - Introduction to the project, forming teams, and discussion of project guidelines.
+- *Thursday, October 26:* **Deliverable 1:** Project Proposal - Students should complete their project proposal and obtain teacher approval.
+
+**Week 2: October 30 - November 2, 2023**
+- *Thursday, November 2:* **Deliverable 2:** System Schematic - Teams should produce a schematic of the system's interconnections.
+
+**Week 3: November 6 - November 9, 2023**
+- *Thursday, November 9:* **Deliverable 3:** System Analysis - Teams should provide a detailed analysis of the system's requirements, stating which applications will handle which tasks.
+
+**Week 4: November 13 - November 16, 2023**
+- *Thursday, November 16:* **Deliverable 4:** Algorithm Development - Present pseudocode outlining the system's operation.
+
+**Week 5: November 20 - November 23, 2023**
+- *Thursday, November 23:* **Deliverable 5:** 50% Implementation Checkpoint - Teams should demonstrate 50% completion of the project.
+
+**Week 6: November 27 - November 30, 2023**
+- Keep working
+
+**Week 7: December 4 - December 7, 2023**
+- *Monday, December 4 and Thursday December 7:* **Deliverable 6:** 100% Implementation Demonstration - Teams should demonstrate the completed project. This will be the final project presentation, and it should be conducted one day before the final exam.
