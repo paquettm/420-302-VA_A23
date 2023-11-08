@@ -5,4 +5,6 @@ This repostory contains documentation shared for students of the Autumn 2023 420
 
 See [Assignment 1: GitHub](IoT_GitHub_Assignment.md)
 
+See [Assignment 2: PiController](IoT_Assignment2_PiController.md)
+
 See [SD Card Preparation](SD_Card_Preparation.md)
